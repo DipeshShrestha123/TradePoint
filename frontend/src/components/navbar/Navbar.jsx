@@ -1,6 +1,9 @@
 import React from "react";
 
 function Navbar() {
+  const handleRedirect = () => {
+    window.open('https://tradepoints-dashboard.netlify.app', '_blank');
+  };  
   return (
     <nav
       className="navbar navbar-expand-lg border-bottom bg-white w-100"
@@ -44,6 +47,11 @@ function Navbar() {
             <li className="nav-item ms-4">
               <a className="nav-link active" href="/pricing">
                 Pricing
+              </a>
+            </li>
+            <li className="nav-item ms-4">
+              <a className="nav-link active" onClick={handleRedirect} style={{ cursor: 'pointer' }}>
+                Dashboard
               </a>
             </li>
             <li className="nav-item ms-4">

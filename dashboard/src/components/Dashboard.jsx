@@ -9,9 +9,10 @@ import { GeneralContextProvider } from "./GeneralContext";
 import WatchList from "./WatchList";
 
 function Apps() {
+  
   const handleRedirect = () => {
-    window.location.replace('https://itsmedipesh.netlify.app');
-  };
+    window.location.replace('https://tradepoints.netlify.app');
+  };  
 
   return (
     <div>

@@ -5,7 +5,7 @@ function Positions() {
   const [positions, setAllpositions] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/allpositions").then((res) => {
+    axios.get("https://tradepoint.onrender.com/allpositions").then((res) => {
       console.log(res.data);
       setAllpositions(res.data);
     });
