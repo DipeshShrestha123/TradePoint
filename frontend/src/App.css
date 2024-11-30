@@ -39,3 +39,9 @@ a{
   border-radius: 10px;
   border: none;
 }
+.navbar-brand{
+  width: 50%;
+}
+.logo_img{
+  width: 12rem !important;
+}

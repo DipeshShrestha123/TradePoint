@@ -1,18 +1,16 @@
 import React from "react";
 
 function Navbar() {
-  const handleRedirect = () => {
-    window.open('https://tradepoints-dashboard.netlify.app', '_blank');
-  };  
+  
   return (
-    <nav
+    <nav  
       className="navbar navbar-expand-lg border-bottom bg-white w-100"
     >
       <div className="container p-2">
         <a className="navbar-brand" href="/">
           <img
-            src="media/images/logo.svg"
-            className="w-25"
+            src="media/images/logo.png"
+            className="logo_img w-25"
             alt="Logo"
           />
         </a>
@@ -29,11 +27,7 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link active ms-4" aria-current="page" href="#">
-                Signup
-              </a>
-            </li>
+            
             <li className="nav-item ms-4">
               <a className="nav-link active" href="/about">
                 About
@@ -49,14 +43,20 @@ function Navbar() {
                 Pricing
               </a>
             </li>
-            <li className="nav-item ms-4">
+            {/* <li className="nav-item ms-4">
               <a className="nav-link active" onClick={handleRedirect} style={{ cursor: 'pointer' }}>
                 Dashboard
               </a>
-            </li>
+            </li> */}
             <li className="nav-item ms-4">
               <a className="nav-link active" href="/support">
                 Support
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active ms-4" aria-current="page" href="/signup"
+              >
+                Signup
               </a>
             </li>
           </ul>

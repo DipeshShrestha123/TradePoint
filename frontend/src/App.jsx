@@ -11,6 +11,8 @@ import AboutPage from "../src/components/landing_page/about/AboutPage"
 import ProductPage from "../src/components/landing_page/products/ProductsPage"
 import PricingPage from "../src/components/landing_page/pricing/PricingPage"
 import SupportPage from "../src/components/landing_page/support/SupportPage"
+import Signin from './components/signin/Signin';
+import Signup from './components/signup/Signup';
 
 
 function App() {
@@ -22,6 +24,14 @@ function App() {
         {
           path: "/",
           element: <HomePage />
+        },
+        {
+          path: "/signin",
+          element: <Signin />
+        },
+        {
+          path: "/signup",
+          element: <Signup />
         },
         {
           path: "/about",

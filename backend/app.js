@@ -7,6 +7,7 @@ import { OrdersModel } from "./schemas&model/OrdersModel.js";
 import { PositionModel } from "./schemas&model/PositionsModel.js";
 import ApiError from "./utils/ApiError.js";
 import cors from "cors"
+import authRouter from "./routes/auth.route.js";
 
 const app = express();
 dotenv.config();
@@ -36,7 +37,7 @@ app.get("/",(req,res) =>{
     res.send("hey");
 })
 
-// app.use(authRouter)
+app.use(authRouter)
 
 app.get("/allHoldings", async (req, res) => {
     try{

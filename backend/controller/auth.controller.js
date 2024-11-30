@@ -85,5 +85,4 @@ const LogOut = async (req, res) => {
         return res.status(errorResponse.statusCode).json(errorResponse);
     }
 };
-
 export { SignUp, LogIn, LogOut };
