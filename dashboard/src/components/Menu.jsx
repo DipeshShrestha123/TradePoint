@@ -14,6 +14,10 @@ function Menu() {
     setIsProfileDropdownOpen(!isProfileDropdownOpen);
   };
 
+  const handleRedirect = () => {
+    window.open('https://tradepoints.netlify.app', '_blank');
+  }; 
+
   const menuClass = "menu";
   const activeMenuClass = "menu selected";
 
@@ -79,12 +83,11 @@ function Menu() {
           </li>
           <li>
             <Link
+              onClick={handleRedirect}
               style={{ textDecoration: "none" }}
-              to="/apps"
-              onClick={() => handleMenuClick(6)}
             >
-              <p className={selectedMenu === 6 ? activeMenuClass : menuClass}>
-                Apps
+              <p className={menuClass}>
+                TradePoint Website
               </p>
             </Link>
           </li>

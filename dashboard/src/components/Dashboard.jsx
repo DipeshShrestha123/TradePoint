@@ -8,24 +8,6 @@ import Holdings from "./Holdings";
 import { GeneralContextProvider } from "./GeneralContext";
 import WatchList from "./WatchList";
 
-function Apps() {
-  
-  const handleRedirect = () => {
-    window.location.replace('https://tradepoints.netlify.app');
-  };  
-
-  return (
-    <div>
-      <h2>Apps Page</h2>
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-        <button className="btn" onClick={handleRedirect} style={{ cursor: 'pointer' }}>
-          Go to TradePoint Site
-        </button>
-      </div>
-    </div>
-  );
-}
-
 function Dashboard() {
   return (
     <div className="dashboard-container">
@@ -39,7 +21,6 @@ function Dashboard() {
           <Route path="/holdings" element={<Holdings />} />
           <Route path="/positions" element={<Positions />} />
           <Route path="/funds" element={<Funds />} />
-          <Route path="/apps" element={<Apps />} />
         </Routes>
       </div>
     </div>
