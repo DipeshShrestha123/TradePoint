@@ -30,7 +30,7 @@ function Pricing() {
               <h1 className="mb-3">₹20</h1>
               <p>Intraday and F&O</p>
             </div>
-          </div>
+          </div>      
         </div>
       </div>
     </div>

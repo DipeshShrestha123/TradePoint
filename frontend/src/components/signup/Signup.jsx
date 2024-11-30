@@ -31,7 +31,7 @@ const Signup = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:8080/signup', {
+      const response = await axios.post('https://tradepoint.onrender.com/signup', {
         username: formData.username,
         email: formData.email,
         password: formData.password,
